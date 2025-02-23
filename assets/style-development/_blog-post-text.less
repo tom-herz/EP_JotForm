@@ -1,0 +1,113 @@
+.component-blog-post-text{
+  .container {
+    > .row {
+      .post-article {
+        .image-posted {
+          width: 100%;
+          height: auto;
+          overflow: hidden;
+          max-height: 500px;
+          margin-bottom: 30px;
+          img {
+            width: 100%;
+          }
+        }
+        > .row {
+          .details-posts {
+            padding-left: 0;
+            text-align: center;
+            > div {
+              max-width: 68px;
+              min-height: 68px;
+              margin-bottom: 25px;
+              border: 1px solid #d1d1d1;
+              span{
+                color: #929292;
+              }
+            }
+            .date-post {
+              .day-contain {
+                width: 100%;
+                margin: -3px 0;
+                text-align: center;
+                span {
+                  font-size: 2.4em;
+                  font-weight: 600;
+                }
+              }
+              .month-year-contain {
+                width: 100%;
+                text-align: center;
+                padding-bottom: 5px;
+                span {
+                  font-size: 0.8em;
+                  font-weight: 600;
+                }
+              }
+            }
+            .type-posts {
+              span {
+                font-size: 2em;
+                line-height: 68px;
+              }
+            }
+          }
+          .container-article {
+            padding-right: 0;
+            .title-post {
+              h1 {
+                font-size: 1.9em;
+                font-weight: 600;
+                margin: 0 0 10px 0;
+                color: @thirdTextColor;
+              }
+            }
+            .posting-data {
+              margin-bottom: 10px;
+              ul {
+                li {
+                  display: inline-block;
+                  span {
+                    color: #bababa;
+                    padding: 0 4px;
+                    font-weight: 500;
+                  }
+                  &:first-child {
+                    span:first-child {
+                      padding: 0;
+                    }
+                  }
+                  &.separator-bar {
+                    span {
+                      padding: 0 10px;
+                    }
+                  }
+                }
+              }
+            }
+            .text-contain {
+              margin-bottom: 20px;
+              p {
+                color: #929292;
+                font-weight: 500;
+                line-height: 1.8em;
+              }
+            }
+            .read-more {
+              font-weight: 500;
+              color: @primaryTextColor;
+              &:hover {
+                span {
+                  margin-left: 15px;
+                }
+              }
+              span {
+                margin-left: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

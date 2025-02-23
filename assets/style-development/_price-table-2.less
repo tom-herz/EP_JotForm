@@ -1,0 +1,132 @@
+html > body > .component-price-table-2 {
+  .container{
+    .row {
+      > div {
+
+        div , a {
+          -webkit-transition: all 150ms linear;
+          -moz-transition: all 150ms linear;
+          -o-transition: all 150ms linear;
+          transition: all 150ms linear;
+        }
+
+        &.talon {
+          margin-top: 85px;
+          text-align: center;
+          background-color: #ffffff;
+          border: 1px solid rgba(0,0,0,0.12);
+          &:hover {
+            border-color: @primaryColor;
+            .price {
+              border-color: @primaryColor;
+              background-color: @primaryColor;
+              .center {
+                h3, p {
+                  color: #ffffff;
+                }
+              }
+            }
+          }
+
+          .price {
+            width: 140px;
+            height: 140px;
+            padding: 10px;
+            margin: 0 auto;
+            margin-top: -60px;
+            border-radius: 50%;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            background-color: #ffffff;
+            border: 1px solid rgba(0,0,0,0.12);
+
+            .center {
+              width: 100%;
+              height: 100%;
+              padding: 28px 0;
+              border-radius: 50%;
+              -moz-border-radius: 50%;
+              -webkit-border-radius: 50%;
+
+              h3 {
+                margin: 0;
+                color: #878787;
+                font-size: 2.6em;
+                font-weight: 600;
+                span {
+                  margin-right: -7px;
+                }
+              }
+              p {
+                margin: 0;
+                color: #878787;
+              }
+            }
+          }
+          .title-talon {
+            h2 {
+              margin: 25px 0;
+              font-size: 2em;
+              font-weight: 600;
+              color: @thirdTextColor;
+            }
+          }
+          .benefits {
+            margin: 0;
+
+            li {
+              padding: 10px 0;
+              color: #888888;
+              font-size: 1em;
+              font-weight: 600;
+            }
+          }
+          a.btn {
+            margin: 25px 0;
+            text-shadow: none;
+            padding: 10px 17px;
+          }
+
+          &.professional {
+            margin-top: 60px;
+            padding-bottom: 10px;
+            border-color: #ffffff;
+            background-color: @primaryColor;
+            &:hover {
+              .price {
+                background-color: #ffffff;
+                .center {
+                  background-color: @primaryColor;
+                  h3 , p{
+                    color: #ffffff;
+                  }
+                }
+              }
+            }
+
+            .price {
+              margin-top: -50px;
+              border-color: @primaryColor;
+
+              .center {
+                h3 , p {
+                  color: @primaryTextColor;
+                }
+              }
+            }
+            .title-talon {
+              h2 {
+                color: #ffffff;
+              }
+            }
+            .benefits {
+              li {
+                color: #ffffff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

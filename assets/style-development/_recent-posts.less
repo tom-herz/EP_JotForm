@@ -1,0 +1,53 @@
+html > body > .component-recent-posts {
+  background-color: #f4f4f4;
+
+  .container{
+     .row {
+       > div {
+         &:hover {
+           .image-posted {
+             img {
+               border-color: @primaryColor;
+             }
+           }
+         }
+         .image-posted {
+            img {
+              width: 100%;
+              border: 1px solid rgba(0,0,0,0);
+            }
+         }
+         .contain {
+           margin: 0 10px;
+           .title-post {
+             margin: 20px 0;
+             font-weight: 600;
+           }
+           .description {
+             p {
+               color: #828282;
+               font-weight: 500;
+             }
+           }
+           .post-data {
+             margin-top: 20px;
+             p {
+               color: #aeaeae;
+               cursor: pointer;
+               margin: 0 4.5% 0 0;
+               font-weight: 500;
+               display: inline-block;
+
+               &:hover {
+                 color: @primaryTextColor;
+               }
+               span {
+                 padding-right: 5px;
+               }
+             }
+           }
+         }
+       }
+     }
+  }
+}

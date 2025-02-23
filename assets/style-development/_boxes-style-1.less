@@ -1,0 +1,80 @@
+html > body > .component-boxes-style-1 {
+  .container {
+    .row {
+      div {
+        text-align: center;
+
+        &:hover {
+          .icon {
+            background-color: @primaryColor;
+            span {
+              color: #ffffff;
+            }
+            .arrow-bar {
+              &:after {
+                border-top-color: @primaryColor;
+              }
+              &:before {
+                border-top-color: @primaryColor;
+              }
+            }
+          }
+        }
+
+        .icon {
+          width: 70px;
+          height: 70px;
+          margin: 0 auto;
+          background: #ffffff;
+          border: 1px solid #e4e4e4;
+
+          &.hint--top:after {
+            left: 0;
+            width: 200px;
+            font-size: 1em;
+            text-shadow: none;
+            line-height: 20px;
+            margin-left: -60px;
+            white-space: normal;
+          }
+
+          span {
+            font-size: 2em;
+            line-height: 70px;
+            color: @primaryColor;
+          }
+
+          .arrow-bar {
+            margin-top: -2px;
+
+            &:after, &:before {
+              border: solid transparent;
+              content: "";
+              height: 0;
+              width: 0;
+              position: absolute;
+              pointer-events: none;
+            }
+            &:after {
+              border-top-color: #ffffff;
+              border-width: 6px;
+              margin-left: -6px;
+            }
+            &:before {
+              border-top-color: #e4e4e4;
+              border-width: 8px;
+              margin-left: -8px;
+            }
+          }
+        }
+
+        h3 {
+          font-size: 1em;
+          font-weight: 600;
+          margin: 22px 0 0 0;
+
+        }
+      }
+    }
+  }
+}

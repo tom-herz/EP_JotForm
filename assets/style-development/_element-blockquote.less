@@ -1,0 +1,59 @@
+html > body > .component-element-block-quote {
+  .container {
+    .row {
+      > div {
+        margin-bottom: 100px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        blockquote {
+          color: #929292;
+          font-size: 14px;
+          font-weight: 500;
+          position: relative;
+          border: 1px solid #edebeb;
+          background-color: #ffffff;
+          padding: 20px 20px 20px 80px;
+          .quote {
+            top: 15px;
+            left: 20px;
+            position: absolute;
+            color: @primaryColor;
+            span {
+              font-size: 50px;
+              font-style: normal;
+              font-family: "Visby", sans-serif;
+            }
+          }
+          p {
+            color: #929292;
+            letter-spacing: 1px;
+          }
+
+          &.block-quote-primary {
+            border: none;
+            color: #ffffff;
+            background-color: @primaryColor;
+            .quote {
+              color: #ffffff;
+            }
+            p {
+              color: #ffffff;
+            }
+          }
+          &.block-quote-secondary {
+            border: none;
+            color: #ffffff;
+            background-color: @thirdColor;
+            .quote {
+              color: @primaryColor;
+            }
+            p {
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+  }
+}

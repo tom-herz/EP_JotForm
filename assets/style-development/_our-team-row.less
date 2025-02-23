@@ -1,0 +1,144 @@
+html > body > .component-our-team-row {
+  background-color: #f4f4f4;
+  .container {
+    .title {
+      h2 {
+        margin: 0;
+      }
+    }
+    .row {
+      > div {
+        .team-talon-row {
+          text-align: center;
+          background-color: #ffffff;
+          border: 1px solid rgba(0,0,0,0.05);
+
+          -webkit-transition: all 0.3s linear;
+          -moz-transition: all 0.3s linear;
+          -o-transition: all 0.3s linear;
+          transition: all 0.3s linear;
+
+          &:nth-child(1), &:nth-child(2) {
+            margin-top: 100px;
+          }
+
+          .photo-container {
+            max-width: 200px;
+            max-height: 200px;
+            margin: 0 auto;
+            margin-top: -100px;
+            border: 0 solid rgba(0,0,0,0);
+
+            -webkit-transition: all 0.3s linear;
+            -moz-transition: all 0.3s linear;
+            -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+
+            img {
+              width: 100%;
+              height: inherit;
+              -webkit-border-radius: 50%;
+              -moz-border-radius: 50%;
+              border-radius: 50%;
+            }
+          }
+          .name-and-occupation {
+            margin: 25px 0;
+            padding: 0 10px;
+
+            h3 {
+              margin: 0 0 5px 0;
+              font-weight: 600;
+
+            }
+            .occupation {
+              margin: 0;
+              font-size: 0.85em;
+
+            }
+          }
+          .description {
+            padding: 0 10px;
+            p {
+              color: #111111;
+            }
+          }
+          .social {
+            padding: 0 10px;
+            margin: 17px 0 27px 0 ;
+            ul {
+              li {
+                width: 20px;
+                height: 20px;
+                margin: 0 2px;
+                text-align: center;
+                display: inline-block;
+                background-color: #b2b2b2;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                border-radius: 50%;
+                a {
+                  display: block;
+                  span {
+                    color: #ffffff;
+                    display: block;
+                    font-size: 0.8em;
+                    line-height: 22px;
+                  }
+                }
+              }
+            }
+          }
+
+          &:hover {
+            background-color: @primaryColor;
+
+            .photo-container {
+              border: 10px solid #ffffff;
+              -webkit-border-radius: 50%;
+              -moz-border-radius: 50%;
+              border-radius: 50%;
+
+              img {
+                border: 2px solid @primaryColor;
+              }
+            }
+            .name-and-occupation {
+              h3 {
+                color: #ffffff;
+              }
+              .occupation {
+                color: #ffffff;
+              }
+            }
+            .description {
+              p {
+                color: #ffffff;
+              }
+            }
+            .social {
+              ul {
+                li {
+                  background-color: rgba(255,255,255,0.5);
+                  &:hover {
+                    background-color: rgba(255,255,255,1);
+                  }
+                  a {
+                    display: block;
+                    span {
+                      color: @primaryColor;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

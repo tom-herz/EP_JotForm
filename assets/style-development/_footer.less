@@ -1,0 +1,177 @@
+html > body > .component-footer {
+  background-color: #eeeeee;
+  border-top: 3px solid @primaryColor;
+    .container {
+      > .row {
+        > div {
+
+          &.clearfix {
+            margin-bottom: 0;
+            border-bottom: none;
+          }
+
+          .logo-contain {
+            .logo {
+              margin-bottom: 25px;
+            }
+          }
+          > p {
+            line-height: 23px;
+            margin-bottom: 20px;
+            a {
+              color: @primaryTextColor;
+            }
+          }
+          .title-widget {
+            margin-bottom: 15px;
+
+            p {
+              margin: 0;
+              font-size: 1.35em;
+              font-weight: 500;
+            }
+          }
+          ul {
+            li {
+              font-size: 1em;
+              font-weight: 500;
+              color: @thirdTextColor;
+            }
+          }
+
+          .hover-image {
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            position: absolute;
+            background-color: @primaryColor;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-image: url("../image/_footer-image-icon-plus.png");
+
+            -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+            filter: alpha(opacity=0);
+            opacity: 0;
+
+            -webkit-transition: all 0.2s linear;
+            -moz-transition: all 0.2s linear;
+            -o-transition: all 0.2s linear;
+            -ms-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+          }
+
+          &.recent-post {
+            .post {
+              margin-bottom: 15px;
+
+              &:hover {
+                .hover-image {
+                  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=90)";
+                  filter: alpha(opacity=90);
+                  opacity: 0.9;
+                }
+              }
+              .contain-image-post {
+                padding: 0;
+                cursor: pointer;
+                position: relative;
+
+                img {
+                  width: 100%;
+                }
+              }
+              .contain-detail-post {
+                padding: 0 0 0 10px;
+                .title-post {
+                  margin: 0;
+                  font-size: 1em;
+                  font-weight: 600;
+                  line-height: 20px;
+                }
+                .post-date {
+                  margin: 0;
+                  font-size: 0.8em;
+                  line-height: 20px;
+                  color: @thirdTextColor;
+                }
+              }
+            }
+          }
+          &.contact-us {
+            ul {
+              li {
+                font-weight: 700;
+                margin-bottom: 5px;
+                &:hover {
+                  span {
+                    color: @primaryTextColor;
+                  }
+                }
+                span {
+                  font-weight: 500;
+                }
+              }
+            }
+          }
+          .follow-us {
+            .title-widget {
+              margin-top: 25px;
+            }
+            ul {
+              li {
+                width: 30px;
+                height: 30px;
+                margin-right: 5px;
+                text-align: center;
+                display: inline-block;
+
+                &:hover {
+                  background-color: @primaryColor;
+                  a {
+                    display: block;
+                    span {
+                      color: #ffffff;
+                    }
+                  }
+                }
+
+                a {
+                  width: 100%;
+                  height: 100%;
+                  span {
+                    line-height: 30px;
+                    color: @thirdTextColor;
+                  }
+                }
+              }
+            }
+          }
+
+          &.flickr-widget {
+            ul {
+              li {
+                width: 80px;
+                height: 80px;
+                overflow: hidden;
+                position: relative;
+                display: inline-block;
+
+                &:hover {
+                  .hover-image {
+                    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=90)";
+                    filter: alpha(opacity=90);
+                    opacity: 0.9;
+                  }
+                }
+                img {
+                  height: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+}

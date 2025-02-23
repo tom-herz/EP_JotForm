@@ -1,0 +1,88 @@
+html > body > .component-element-accordions {
+  .container {
+    .row {
+      > div {
+        .panel-group {
+          .panel {
+            box-shadow: none;
+            position: relative;
+            border-radius: inherit;
+            border-color: rgba(0,0,0,0.18);
+
+            .panel-heading {
+              padding: 0;
+              box-shadow: none;
+              border-radius: inherit;
+              background-image: none;
+              background-color: #d2d2d2;
+              border-color: rgba(0,0,0,0.18);
+              -webkit-transition: all 0.1s linear;
+              -moz-transition: all 0.1s linear;
+              -o-transition: all 0.1s linear;
+              -ms-transition: all 0.1s linear;
+              transition: all 0.1s linear;
+
+              &:hover {
+                background-color: #ffffff;
+              }
+
+              .panel-title {
+                a {
+                  display: block;
+                  font-size: 14px;
+                  font-weight: 600;
+                  padding: 10px 15px;
+                  color: @thirdTextColor;
+                  .large-contain{
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    width: 100%;
+                    height: 35px;
+                    position: absolute;
+                  }
+                  span {
+                    font-size: 14px;
+                    padding-right: 10px;
+                  }
+                }
+              }
+            }
+            .panel-collapse {
+              .panel-body {
+                color: #929292;
+                font-size: 13px;
+                font-weight: 500;
+              }
+            }
+          }
+
+
+          &.accordion-inversee {
+            .panel {
+              .panel-heading {
+                background-color: #ffffff;
+
+                &:hover {
+                  .panel-title {
+                    a {
+                      color: @primaryColor;
+                    }
+                  }
+                }
+
+                .panel-title {
+                  a {
+                    span {
+                      color: @primaryColor;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

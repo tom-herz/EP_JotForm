@@ -1,0 +1,320 @@
+@font-face {
+  font-family: 'Merriweather';
+  src: url('../fonts/merriweather/Merriweather-Bold.eot');
+  src: url('../fonts/merriweather/Merriweather-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/merriweather/Merriweather-Bold.woff') format('woff'),
+  url('../fonts/merriweather/Merriweather-Bold.ttf') format('truetype'),
+  url('../fonts/merriweather/Merriweather-Bold.svg#FrancophilSansRegular') format('svg');
+  font-weight: 800;
+}
+@font-face {
+  font-family: 'MerriweatherSans';
+  src: url('../fonts/merriweather/MerriweatherSans-Light.eot');
+  src: url('../fonts/merriweather/MerriweatherSans-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/merriweather/MerriweatherSans-Light.woff') format('woff'),
+  url('../fonts/merriweather/MerriweatherSans-Light.ttf') format('truetype'),
+  url('../fonts/merriweather/MerriweatherSans-Light.svg#FrancophilSansRegular') format('svg');
+  font-weight: 700;
+}
+@font-face {
+  font-family: Visby;
+  src: url(../fonts/visby/VisbyCF-HeavyOblique.otf);
+  font-weight: 900;
+}
+@font-face {
+  font-family: Visby;
+  src: url(../fonts/visby/VisbyCF-Heavy.otf);
+  font-weight: 900;
+}
+@font-face {
+  font-family: Visby;
+  src: url(../fonts/visby/VisbyCF-ExtraBoldOblique.otf);
+  font-weight: 800;
+}
+@font-face {
+  font-family: Visby;
+  src: url(../fonts/visby/VisbyCF-ExtraBold.otf);
+  font-weight: 800;
+}
+@font-face {
+  font-family: Visby;
+  src: url(../fonts/visby/VisbyCF-BoldOblique.otf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: Visby;
+  src: url(../fonts/visby/VisbyCF-Bold.otf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: Visby;
+  src: url(../fonts/visby/VisbyCF-DemiBoldOblique.otf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: Visby;
+  src: url(../fonts/visby/VisbyCF-DemiBold.otf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: Visby;
+  src: url(../fonts/visby/VisbyCF-MediumOblique.otf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: Visby;
+  src: url(../fonts/visby/VisbyCF-Medium.otf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: Visby;
+  src: url(../fonts/visby/VisbyCF-RegularOblique.otf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: Visby;
+  src: url(../fonts/visby/VisbyCF-Regular.otf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: Visby;
+  src: url(../fonts/visby/VisbyCF-LightOblique.otf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: Visby;
+  src: url(../fonts/visby/VisbyCF-Light.otf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: Visby;
+  src: url(../fonts/visby/VisbyCF-ThinOblique.otf);
+  font-weight: 100;
+}
+@font-face {
+  font-family: Visby;
+  src: url(../fonts/visby/VisbyCF-Thin.otf);
+  font-weight: 100;
+}
+
+
+html, body {
+  height: 100%;
+}
+
+.row {
+  width: 100%;
+}
+
+body {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Visby", sans-serif;
+  body > div {
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+.hint--primary:after {
+  background-color: @primaryColor;
+  text-shadow: 0 -1px 0px #6c5328;
+}
+
+.hint--primary.hint--top:before {
+  border-top-color: @primaryColor;
+}
+
+.hint--primary.hint--bottom:before {
+  border-bottom-color: @primaryColor;
+}
+
+.hint--primary.hint--left:before {
+  border-left-color: @primaryColor;
+}
+
+.hint--primary.hint--right:before {
+  border-right-color: @primaryColor;
+}
+
+.full-background (@image) {
+  background-image: url(@image);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+
+p {
+  font-size: 1em;
+  font-weight: 500;
+  line-height: 1.5em;
+  color: @thirdTextColor;
+}
+
+a:hover {
+  text-decoration: none;
+}
+button {
+  outline: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 800;
+  color: @secondaryTextColor;
+}
+
+h1 { font-size:  2.85em; }
+h2 { font-size:     2em; }
+h3 { font-size:   1.3em; }
+h4 { font-size:   0.9em; }
+h5 { font-size:   0.8em; }
+h6 { font-size:   0.7em; }
+
+ul {list-style:none; padding: 0;}
+
+input ,
+button ,
+textarea,
+input:focus ,
+button:focus ,
+textarea:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.row{
+  margin: 0;
+  padding: 0;
+}
+.container {
+  padding: 0;
+}
+
+.title {
+  h2 {
+    margin: 0;
+    text-align: center;
+
+  }
+}
+
+.line-separator {
+  height: 1px;
+  width: 107px;
+  margin: 0 auto;
+  margin-top: 22px;
+  text-align: center;
+  margin-bottom: 33px;
+  background-color: @primaryColor;
+  &.h80 {
+    margin-bottom: 80px;
+  }
+  span {
+    width: 7px;
+    height: 7px;
+    float: left;
+    margin: 0 48%;
+    margin-top: -3px;
+    border-radius: 50%;
+    background: @primaryColor;
+  }
+}
+
+.line-separator-full {
+  height: 1px;
+  width: 100%;
+  margin: 80px 15px;
+  text-align: center;
+  background-color: #e1e1e1;
+  span {
+    width: 7px;
+    height: 7px;
+    float: left;
+    margin: 0 48%;
+    margin-top: -3px;
+    border-radius: 50%;
+    background: #e1e1e1;
+  }
+}
+
+.padding-in-box {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.padding-in-box-100 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.padding-in-box-100-120 {
+  padding-top: 100px;
+  padding-bottom: 120px;
+}
+
+.padding-in-box-120-100 {
+  padding-top: 120px;
+  padding-bottom: 100px;
+}
+
+.padding-in-box-130-100 {
+  padding-top: 130px;
+  padding-bottom: 100px;
+}
+
+.padding-in-box-130-120 {
+  padding-top: 130px;
+  padding-bottom: 120px;
+}
+
+.padding-in-box-top-100 {
+  padding-top: 100px;
+}
+
+.padding-in-box-top {
+  padding-top: 130px;
+}
+
+.padding-in-box-bottom {
+  padding-bottom: 130px;
+}
+
+ul , li , a  , span , input , textarea , button {
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  -ms-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.blog-sidebar  body {
+  background-color: #f4f4f4;
+}
+.blog-sidebar .container .container {
+  width: 100%;
+}
+.blog-sidebar .row > .details-posts {
+  padding: 0;
+}
+.body-short-codes > div {
+  background: #f4f4f4;
+}
+.body-short-codes  div {
+  &.padding-in-box,
+  &.padding-in-box-100,
+  &.padding-in-box-100-120,
+  &.padding-in-box-120-100,
+  &.padding-in-box-130-100,
+  &.padding-in-box-130-120,
+  &.padding-in-box-top-100,
+  &.padding-in-box-top,
+  &.padding-in-box-bottom {
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+  }
+}

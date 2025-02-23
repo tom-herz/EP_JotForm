@@ -1,0 +1,101 @@
+html body > .component-separator-progress .container .row > div .image-cropper {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+> .component-separator-progress .container .row > div .image-cropper img {
+    display: inline;
+    margin: 0 auto;
+
+}
+
+.align-center {text-align:center;}
+
+/*i
+{
+  padding: 5px 10px;
+ display: inline-block;
+ -moz-border-radius: 100px;
+ -webkit-border-radius: 100px;
+ border-radius: 100px;
+ -moz-box-shadow: 0px 0px 2px #888;
+ -webkit-box-shadow: 0px 0px 2px #888;
+ box-shadow: 0px 0px 2px #888;
+}*/
+
+
+/*font awesome overrides and icon settings.*/
+.fa-7x {font-size: 7em;color:#306799}
+
+line-separator.h30 {
+  margin-bottom: 30px;
+}
+
+ine-separator.h60 {
+  margin-bottom: 60px;
+}
+html > body > .component-separator-quotation_2 {
+background-image: url("../image/t2_woman_laptop.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+html > body > .component-separator-quotation_2 .parallax {
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+html > body > .component-separator-quotation_2 .parallax .container {
+  text-align: center;
+}
+html > body > .component-separator-quotation_2 .parallax .container ul li > span.fa {
+  color: #ffffff;
+  font-size: 4.2em;
+  text-shadow: none;
+}
+html > body > .component-separator-quotation_2 .parallax .container ul li > .quotation {
+  margin: 50px;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 3.25em;
+  line-height: 1.3em;
+}
+html > body > .component-separator-quotation_2 .parallax .container ul li > .author {
+  font-size: 1.2em;
+  color: #ffffff;
+}
+
+html > body > div >   .panel-heading {background:#306799}
+
+.section-padding {
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+.line-separator-10{
+  height: 1px;
+  width: 107px;
+  margin: 0 auto;
+  margin-top: 22px;
+  text-align: center;
+  margin-bottom: 5px;
+  background-color: #1998ff;
+  }
+
+
+.padding-in-box-0-40 {
+  padding-top: 0px;
+  padding-bottom: 40px;
+}
+
+
+
+
+
+
+

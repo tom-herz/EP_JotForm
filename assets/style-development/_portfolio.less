@@ -1,0 +1,553 @@
+html > body > .component-portfolio {
+  .content-portfolio {
+    .portfolio-venus {
+      .portfolio-venus-filter {
+        text-align: center;
+        margin-bottom: 20px;
+        ul {
+          margin: 0;
+        }
+        li {
+          display: inline-block;
+          margin: 0 20px 20px 0;
+          &:last-child {
+            margin: 0;
+          }
+          a {
+            color: #a7a7a7;
+            display: block;
+            padding: 5px 10px;
+            border: 1px solid #e7e7e7;
+            background-color: #ffffff;
+            &:hover {
+                color: #ffffff;
+                border-color: @primaryColor;
+                background-color: @primaryColor;
+            }
+            &:focus {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+      .portfolio-venus-items {
+        .portfolio-venus-item {
+          .portfolio-venus-overlay-wrapper {
+            .portfolio-venus-overlay {
+              a {
+                height: 100%;
+                display: block;
+              }
+              .title-image {
+                margin: 0;
+                color: #ffffff;
+                font-weight: 600;
+                font-size: 1.15em;
+                margin-bottom: 15px;
+              }
+              .tags {
+                width: 35%;
+                margin: 0 auto;
+                padding: 2px 5px;
+                border: 1px solid #ffffff;
+
+                span{
+                  color: #ffffff;
+                  font-size: 0.85em;
+                  display: block;
+                  &.separator-tags {
+                    width: 30px;
+                    height: 1px;
+                    margin: 0 auto;
+                    overflow: hidden;
+                    text-indent: -10000px;
+                    background-color: #ffffff;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .isotope-item {
+          z-index: 2;
+        }
+        .isotope-hidden.isotope-item {
+          pointer-events: none;
+          z-index: 1;
+        }
+        .isotope,
+        .isotope .isotope-item {
+          /* change duration value to whatever you like */
+
+          -webkit-transition-duration: 0.8s;
+          -moz-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+        }
+        .isotope {
+          -webkit-transition-property: height, width;
+          -moz-transition-property: height, width;
+          transition-property: height, width;
+        }
+        .isotope .isotope-item {
+          -webkit-transition-property: -webkit-transform, opacity;
+          -moz-transition-property: -moz-transform, opacity;
+          transition-property: transform, opacity;
+        }
+      }
+    }
+  }
+}
+
+  /**
+ * Featherlight - ultra slim jQuery lightbox
+ * Version 1.0.3 - http://noelboss.github.io/featherlight/
+ *
+ * Copyright 2014, Noël Raoul Bossart (http://www.noelboss.com)
+ * MIT Licensed.
+**/
+  .featherlight {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    cursor: pointer;
+    z-index: 100000;
+    position: fixed;
+    text-align: center;
+    background: #333333;
+    white-space: nowrap;
+    background: rgba(0, 0, 0, 0)
+  }
+  .featherlight:last-of-type {
+    background: rgba(0, 0, 0, .8)
+  }
+  .featherlight:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -.25em
+  }
+  .featherlight .featherlight-content {
+    position: relative;
+    text-align: left;
+    vertical-align: middle;
+    display: inline-block;
+    overflow: auto;
+    min-width: 30%;
+    margin-left: 5%;
+    margin-right: 5%;
+    max-height: 95%;
+    background: #fff;
+    cursor: auto;
+    white-space: normal
+  }
+  .featherlight .featherlight-inner {
+    display: block;
+    cursor: pointer;
+  }
+  .featherlight .featherlight-close-icon {
+    top: 0;
+    right: 0;
+    width: 25px;
+    z-index: 9999;
+    color: #000000;
+    cursor: pointer;
+    font-weight: 800;
+    line-height: 25px;
+    position: absolute;
+    text-align: center;
+    background: #ffffff;
+  }
+
+  .featherlight .featherlight-image {
+    width: 100%
+  }
+  .featherlight-iframe .featherlight-content {
+    border-bottom: 0;
+    padding: 0
+  }
+  .featherlight iframe {
+    border: 0
+  }
+
+  @media (max-width:1024px) {
+    .featherlight .featherlight-content {
+      margin-left: 10px;
+      margin-right: 10px;
+      max-height: 98%;
+    }
+  }
+
+
+
+  /*
+  # SP Portfolio - Simple Portfolio module by JoomShaper.com
+  # -------------------------------------------------------------
+  # Author    JoomShaper http://www.joomshaper.com
+  # Copyright (C) 2010 - 2014 JoomShaper.com. All Rights Reserved.
+  # @license - GNU/GPL V2 or Later
+  # Websites: http://www.joomshaper.com
+  */
+
+
+  /*Isotope Animation*/
+  .isotope,
+  .isotope .isotope-item {
+    /* change duration value to whatever you like */
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -ms-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+  }
+
+  .isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    -ms-transition-property: height, width;
+    -o-transition-property: height, width;
+    transition-property: height, width;
+  }
+
+  .isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property:    -moz-transform, opacity;
+    -ms-transition-property:     -ms-transform, opacity;
+    -o-transition-property:      -o-transform, opacity;
+    transition-property:         transform, opacity;
+  }
+
+
+  .rtl .isotope .isotope-item {
+    -webkit-transition-property: right, top, -webkit-transform, opacity;
+    -moz-transition-property: right, top, -moz-transform, opacity;
+    -ms-transition-property: right, top, -ms-transform, opacity;
+    -o-transition-property: right, top, -o-transform, opacity;
+    transition-property: right, top, transform, opacity;
+  }
+  /**
+   * @package     SP Simple Portfolio
+   *
+   * @copyright   Copyright (C) 2010 - 2015 JoomShaper. All rights reserved.
+   * @license     GNU General Public License version 2 or later.
+   */
+
+  .portfolio-venus {
+    padding: 0;
+  }
+
+  .portfolio-venus:before,
+  .portfolio-venus:after {
+    content: " ";
+    display: table;
+  }
+
+  .portfolio-venus:after {
+    clear: both;
+  }
+
+  .portfolio-venus .portfolio-venus-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .portfolio-venus.layout-gallery-nospace .portfolio-venus-items {
+    margin: 0;
+  }
+
+  .portfolio-venus.layout-gallery-nospace .portfolio-venus-item {
+    padding: 0;
+  }
+
+  .portfolio-venus .portfolio-venus-columns-2 .portfolio-venus-item {
+    width: 50%;
+  }
+
+  .portfolio-venus .portfolio-venus-columns-3 .portfolio-venus-item {
+    width: 33.3333%;
+  }
+
+  .portfolio-venus .portfolio-venus-columns-4 .portfolio-venus-item {
+    width: 25%;
+  }
+
+  .portfolio-venus .portfolio-venus-item {
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .portfolio-venus .portfolio-venus-item .portfolio-venus-overlay-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .portfolio-venus .portfolio-venus-item .portfolio-venus-overlay-wrapper .portfolio-venus-icon-video {
+    display: inline-block;
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    background-size: contain;
+    top: 50%;
+    left: 50%;
+    margin-top: -24px;
+    margin-left: -24px;
+    z-index: 1;
+  }
+
+  .portfolio-venus .portfolio-venus-item .portfolio-venus-overlay-wrapper .portfolio-venus-img {
+    float: left;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    -webkit-transition: all 400ms;
+    transition: all 400ms;
+  }
+
+  .portfolio-venus .portfolio-venus-item .portfolio-venus-overlay-wrapper .portfolio-venus-overlay {
+    opacity: 0;
+    transition: opacity 400ms;
+    -webkit-transition: opacity 400ms;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    z-index: 2;
+    background-color: @primaryColorOpacity90;
+  }
+
+  .portfolio-venus .portfolio-venus-item .portfolio-venus-overlay-wrapper .portfolio-venus-overlay h3 {
+    font-size: 16px;
+    line-height: 1;
+    margin: 0;
+    color: #fff;
+  }
+
+  .portfolio-venus .portfolio-venus-item:hover .portfolio-venus-overlay {
+    opacity: 1;
+  }
+
+  .portfolio-venus .portfolio-venus-item:hover .portfolio-venus-overlay  a {
+    color: #ffffff;
+  }
+
+  .portfolio-venus .portfolio-venus-item .portfolio-venus-info:hover {
+    background: #333;
+    color: #ffffff;
+  }
+
+  .portfolio-venus .portfolio-venus-item .portfolio-venus-info:hover h3 > a {
+    color: #ffffff;
+  }
+
+  .portfolio-venus .portfolio-venus-item:hover .sp-vertical-middle .portfolio-venus-title,
+  .portfolio-venus .portfolio-venus-item:hover .sp-vertical-middle .portfolio-venus-tags {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  .portfolio-venus .portfolio-venus-item:hover .portfolio-venus-btns a {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  .portfolio-venus .portfolio-venus-item:hover .portfolio-venus-img {
+    -webkit-transform: scale3d(1.15, 1.15, 1);
+    transform: scale3d(1.15, 1.15, 1);
+  }
+
+  .portfolio-venus .portfolio-venus-item .portfolio-venus-info {
+    background: #f5f5f5;
+    padding: 20px;
+    font-size: 13px;
+    line-height: 13px;
+    -webkit-transition: all 400ms;
+    transition: all 400ms;
+  }
+
+  .portfolio-venus .portfolio-venus-item .portfolio-venus-info h3 {
+    margin: 0 0 10px;
+    padding: 0;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .portfolio-venus .portfolio-venus-item .portfolio-venus-info h3 > a {
+    text-decoration: none;
+    color: #000;
+    -webkit-transition: color 400ms;
+    transition: color 400ms;
+  }
+
+  .portfolio-venus .portfolio-venus-item .sp-vertical-middle {
+    height: 100%;
+    width: 100%;
+    display: table;
+  }
+
+  .portfolio-venus .portfolio-venus-item .sp-vertical-middle > div {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .portfolio-venus .portfolio-venus-item .sp-vertical-middle > div .portfolio-venus-title {
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: 1px;
+  }
+
+  .portfolio-venus .portfolio-venus-item .sp-vertical-middle > div .portfolio-venus-title a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .portfolio-venus .portfolio-venus-item .sp-vertical-middle .portfolio-venus-title {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 15px, 0);
+    transform: translate3d(0, 15px, 0);
+    -webkit-transition: all 400ms;
+    transition: all 400ms;
+  }
+
+  .portfolio-venus .portfolio-venus-item .sp-vertical-middle .portfolio-venus-tags {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 15px, 0);
+    transform: translate3d(0, 15px, 0);
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+  }
+
+  .portfolio-venus .portfolio-venus-item .portfolio-venus-btns a {
+    display: inline-block;
+    padding: 7px 12px;
+    margin: 3px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 1;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    text-decoration: none;
+    text-transform: uppercase;
+    opacity: 0;
+    -webkit-transform: scale3d(0, 0, 0);
+    transform: scale3d(0, 0, 0);
+    -webkit-transition: all 400ms;
+    transition: all 400ms;
+  }
+
+  .portfolio-venus .portfolio-venus-item .portfolio-venus-btns a:hover {
+    background: #333;
+    border-color: #333;
+  }
+
+  .portfolio-venus .portfolio-venus-image {
+    margin-bottom: 20px;
+  }
+
+  .portfolio-venus .portfolio-venus-description {
+    width: 65%;
+    float: left;
+  }
+
+  .portfolio-venus .portfolio-venus-description > h2 {
+    font-size: 30px;
+    line-height: 1;
+    margin: 0 0 10px;
+  }
+
+  .portfolio-venus .portfolio-venus-meta {
+    width: 35%;
+    float: left;
+    padding-left: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .portfolio-venus .portfolio-venus-meta > div {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .portfolio-venus .portfolio-venus-meta > div:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+
+  .portfolio-venus .portfolio-venus-meta h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 0 10px;
+  }
+
+  .portfolio-venus .portfolio-venus-embed {
+    position: relative;
+    display: block;
+    height: 0;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+  }
+
+  .portfolio-venus .portfolio-venus-embed iframe,
+  .portfolio-venus .portfolio-venus-embed embed,
+  .portfolio-venus .portfolio-venus-embed object,
+  .portfolio-venus .portfolio-venus-embed video {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  .portfolio-venus-lightbox {
+    display: none;
+  }
+
+  @media only screen and (max-width: 992px) {
+    .portfolio-venus .portfolio-venus-items .portfolio-venus-item {
+      width: 50%;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .portfolio-venus .portfolio-venus-description {
+      width: auto;
+      float: none;
+      margin-bottom: 30px;
+    }
+    .portfolio-venus .portfolio-venus-meta {
+      width: auto;
+      float: none;
+      padding-left: 0;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    .portfolio-venus .portfolio-venus-items .portfolio-venus-item {
+      width: 100%;
+    }
+  }

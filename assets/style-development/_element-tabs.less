@@ -1,0 +1,146 @@
+html > body > .component-element-tabs {
+  .container {
+    .row {
+      > div {
+        margin: 50px 0;
+        &:first-child {
+          margin-top: 0;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+        .tab {
+          &.tab-2 {
+            .nav-tabs {
+              > li {
+                &.active:hover {
+                  a {
+                    border-top: 1px solid #edebeb;
+                    border-left: 1px solid #edebeb;
+                    border-right: 1px solid #edebeb;
+                    span {
+                      color: @primaryTextColor;
+                    }
+                  }
+                }
+                &:hover {
+                  a {
+                    color: @primaryTextColor;
+                    border-color: @primaryColor;
+                    background-color: #ffffff;
+                    span {
+                      color: @primaryTextColor;
+                    }
+                  }
+                }
+                > a {
+                  color: #ffffff;
+                  background-color: @primaryColor;
+                }
+              }
+            }
+          }
+
+          &.tab-3 {
+            .nav-tabs {
+              > li {
+                &.active,
+                &.active:hover {
+                  a {
+                    border-top: 1px solid @primaryColor;
+                    border-left: 1px solid @primaryColor;
+                    border-right: 1px solid @primaryColor;
+                    span {
+                      color: @primaryTextColor;
+                    }
+                  }
+                }
+                &:hover {
+                  a {
+                    color: @primaryTextColor;
+                    border-color: @primaryColor;
+                    background-color: #ffffff;
+                    span {
+                      color: @primaryTextColor;
+                    }
+                  }
+                }
+                > a {
+                  border: 1px solid #edebeb;
+                  background-color: #ffffff;
+                }
+              }
+            }
+            .tab-content {
+              .tab-pane {
+                background-color: #ffffff;
+                border: 1px solid @primaryColor;
+                p:last-child {
+                  margin-bottom: 0;
+                }
+              }
+            }
+          }
+          .nav-tabs {
+            border: none;
+
+            > li {
+              margin-bottom: 7px;
+              &:hover {
+                a {
+                  border: 1px solid #edebeb;
+                  background-color: #ffffff;
+                }
+              }
+              &:active {
+                a {
+                  border: 1px solid #c2c2c2;
+                }
+              }
+              &.active {
+                margin-bottom: 0;
+                > a {
+                  margin-top: -6px;
+                  padding-top: 16px;
+                  border-bottom: none;
+                  padding-bottom: 17px;
+                  color: @primaryTextColor;
+                  background-color: #ffffff;
+                  border-top: 1px solid #edebeb;
+                  border-left: 1px solid #edebeb;
+                  border-right: 1px solid #edebeb;
+                }
+              }
+              > a {
+                font-size: 1em;
+                border-radius: 0;
+                margin-right: 5px;
+                padding: 10px 23px;
+                color: @thirdTextColor;
+                background-color: #d2d2d2;
+                > span {
+                  padding-right: 10px;
+                }
+              }
+            }
+          }
+          .tab-content {
+            margin-top: -2px;
+
+            .tab-pane {
+              padding: 20px;
+              background-color: #ffffff;
+              border: 1px solid #edebeb;
+              p {
+                color: #929292;
+                &:last-child {
+                  margin-bottom: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

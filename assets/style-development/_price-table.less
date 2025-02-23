@@ -1,0 +1,144 @@
+html > body > .component-price-table {
+  .container{
+     .row {
+       > div {
+
+         div , a {
+           -webkit-transition: all 150ms linear;
+           -moz-transition: all 150ms linear;
+           -o-transition: all 150ms linear;
+           transition: all 150ms linear;
+         }
+
+         .talon {
+           margin-top: 85px;
+           text-align: center;
+           background-color: #ffffff;
+           border: 1px solid rgba(0,0,0,0.12);
+           &:hover {
+             border-color: @primaryColor;
+             .price {
+               border-color: @primaryColor;
+               .center {
+                   background-color: @primaryColor;
+               }
+             }
+           }
+
+           .price {
+             width: 140px;
+             height: 140px;
+             padding: 10px;
+             margin: 0 auto;
+             margin-top: -60px;
+             border-radius: 50%;
+             -moz-border-radius: 50%;
+             -webkit-border-radius: 50%;
+             background-color: #ffffff;
+             border: 1px solid rgba(0,0,0,0.12);
+             &:hover {
+               border-color: @primaryColor;
+             }
+
+             .center {
+               width: 100%;
+               height: 100%;
+               padding: 28px 0;
+               border-radius: 50%;
+               -moz-border-radius: 50%;
+               -webkit-border-radius: 50%;
+               background-color: @thirdColor;
+               &:hover {
+                 background-color: @primaryColor;
+               }
+
+               h3 {
+                 margin: 0;
+                 color: #ffffff;
+                 font-size: 2.6em;
+                 font-weight: 600;
+                 span {
+                   margin-right: -7px;
+                 }
+               }
+               p {
+                 margin: 0;
+                 color: #ffffff;
+               }
+             }
+           }
+           .title-talon {
+              h2 {
+                margin: 25px 0;
+                font-size: 2em;
+                font-weight: 600;
+                color: @thirdTextColor;
+              }
+           }
+           .benefits {
+             margin: 0;
+
+             li {
+               padding: 10px 0;
+               color: #888888;
+               font-size: 1em;
+               font-weight: 600;
+               border-top: 1px solid rgba(0,0,0,0.07);
+
+               &:last-child {
+                 border-bottom: 1px solid rgba(0,0,0,0.07);
+               }
+             }
+           }
+           a.btn {
+             margin: 25px 0;
+             text-shadow: none;
+             padding: 10px 17px;
+           }
+
+           &.professional {
+             background-color: @primaryColor;
+
+             .price {
+               position: relative;
+               border: 1px solid @primaryColor;
+
+               .badge {
+                 right: 0;
+                 top: -10px;
+                 padding: 0;
+                 width: 50px;
+                 height: 50px;
+                 font-weight: 600;
+                 font-size: 1.25em;
+                 line-height: 48px;
+                 position: absolute;
+                 color: @primaryTextColor;
+
+                 background-color: #ffffff;
+                 border: 1px solid @primaryColor;
+
+                 border-radius: 50%;
+                 -moz-border-radius: 50%;
+                 -webkit-border-radius: 50%;
+               }
+               .center {
+                 background-color: @primaryColor;
+               }
+             }
+             .title-talon {
+               h2 {
+                 color: #ffffff;
+               }
+             }
+             .benefits {
+               li {
+                 color: #ffffff;
+               }
+             }
+           }
+         }
+       }
+     }
+  }
+}

@@ -1,0 +1,73 @@
+html > body > .component-element-social-icons {
+  .container {
+    .content {
+      ul.social-icon {
+        margin: 0;
+        text-align: center;
+        li {
+          text-align: center;
+          margin: 0 12px 12px 0;
+          display: inline-block;
+          background-color: #ffffff;
+          border: 1px solid rgba(0,0,0,0.1);
+          -webkit-transition: all 0.3s linear;
+          -moz-transition: all 0.3s linear;
+          -o-transition: all 0.3s linear;
+          -ms-transition: all 0.3s linear;
+          transition: all 0.3s linear;
+
+          &.clearfix {
+            opacity: 0;
+          }
+          &:hover {
+            background-color: @primaryColor;
+            a {
+              span {
+                color: #ffffff;
+              }
+            }
+          }
+
+          a {
+            display: block;
+            span {
+              color: @thirdTextColor;
+
+              -webkit-transition: all 0.3s linear;
+              -moz-transition: all 0.3s linear;
+              -o-transition: all 0.3s linear;
+              -ms-transition: all 0.3s linear;
+              transition: all 0.3s linear;
+            }
+          }
+        }
+
+        &.icon-small {
+          margin-bottom: 50px;
+
+          li {
+            width: 30px;
+            height: 30px;
+            a {
+              display: block;
+              span {
+                line-height: 30px;
+              }
+            }
+          }
+        }
+        &.icon-large {
+          li {
+            width: 40px;
+            height: 40px;
+            a {
+              span {
+                line-height: 40px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

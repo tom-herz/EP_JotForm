@@ -1,0 +1,51 @@
+html > body > .component-milestone-counters-1 {
+    .container {
+        .title {
+          h2 {
+            margin: 0;
+          }
+        }
+        .row {
+          > div {
+            text-align: center;
+            border: 1px solid rgba(0,0,0,0);
+            -webkit-transition: all 150ms linear;
+            -moz-transition: all 150ms linear;
+            -o-transition: all 150ms linear;
+            transition: all 150ms linear;
+
+            > p {
+              span {
+                text-align: center;
+              }
+              &.picture {
+                margin: 15px 0 35px 0;
+                span {
+                  font-size: 4.3em;
+                  color: @primaryColor;
+                }
+              }
+              &.number {
+                margin: 0 0 20px 0;
+                span {
+                  font-size: 4.5em;
+                  font-weight: 600;
+                }
+              }
+              &.name {
+                span {
+                  color: #929292;
+                  font-size: 1.3em;
+                  font-weight: 600;
+                }
+              }
+            }
+
+            &:hover {
+              border-color: @primaryColor;
+            }
+          }
+        }
+
+      }
+}
