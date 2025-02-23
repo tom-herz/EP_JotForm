@@ -10,42 +10,40 @@
     <link type="text/css" href="assets/style/style.css" rel="stylesheet">
 </head>
 <body>
-    <header
-    ref={node => { this.root = node; }}>
-   
-    <div className="component-navigation" id="first-scroll">
-      <div className="container">
-        <nav id="scrollSpyMenu" className="navbar">
-          <div className="navbar-header">
-            <a className="mdl-layout-title" href="/#">
-              <Logo height={96} width={292}/>
-            </a>
+    <header>
+      <div className="component-navigation" id="first-scroll">
+        <div className="container">
+          <nav id="scrollSpyMenu" className="navbar">
+            <div className="navbar-header">
+              <a className="mdl-layout-title" href="/#">
+                <Logo height={96} width={292}/>
+              </a>
+            </div>
+            <div className="collapse navbar-collapse">
+              <ul className="nav navbar-nav navbar-referral-rightalign">
+                  <li>
+                      <a href="/#about">About Us</a>
+                  </li>
+                  <li className="active">
+                    <a href="/referral"><b>Submit a Referral</b></a>
+                  </li>
+                  <li>
+                      <a href="/#services">Our Services</a>
+                  </li>
+                  
+                  <li>
+                      <a href="/#customers">Customers</a>
+                  </li>
+                  <li>
+                      <a href="/#FAQ">FAQ</a>
+                  </li>
+                  <li>
+                      <a href="/#contact">Contact Us</a>
+                  </li>
+              </ul>
+            </div>
+          </nav>
           </div>
-          <div className="collapse navbar-collapse">
-            <ul className="nav navbar-nav navbar-referral-rightalign">
-                <li>
-                    <a href="/#about">About Us</a>
-                </li>
-                <li className="active">
-                  <a href="/referral"><b>Submit a Referral</b></a>
-                </li>
-                <li>
-                    <a href="/#services">Our Services</a>
-                </li>
-                
-                <li>
-                    <a href="/#customers">Customers</a>
-                </li>
-                <li>
-                    <a href="/#FAQ">FAQ</a>
-                </li>
-                <li>
-                    <a href="/#contact">Contact Us</a>
-                </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
     </div>
   </header>
   <body>
